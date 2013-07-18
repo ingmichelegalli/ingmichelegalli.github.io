@@ -27,7 +27,7 @@
               <a class="tar_download_link" href="https://github.com/ingmichelegalli/ingmichelegalli.github.iotarball/master">Download this project as a tar.gz file</a>
             </section>
 <section id="menu">
-<button name="Home" onclick="location.href='ingmichelegalli.github.io/index.html'"><font size="4"> Home</font></button>
+<button name="Home" onclick="href='ingmichelegalli.github.io/index.html'"><font size="4"> Home</font></button>
 			<button name="t24basequadra" onclick="location.href='https://ingmichelegalli.github.io/t24basequadra.html'"><font size="4"> T24 Base Quadra</font></button>
 <button name="t20fasciaspecchiata" style=”background-color:blue” onclick="location.href='https://ingmichelegalli.github.io/t20fasciaspecchiata.html'"><font size="4"> T20 Fascia Specchiata</font></button>
 <button name="p4catilina" onclick="location.href='https://ingmichelegalli.github.io/p4catilina.html'"><font size="4"> P4 Catilina</font></button>
@@ -116,7 +116,7 @@ grid_verticals = repeatTraslation(grid_vertical,1,0.1,57)
 Finally i did the legs of the bed.
 The legs have the same pattern of the up headboard and they are made by two parts
 <p><img src="https://raw.github.com/ingmichelegalli/ingmichelegalli.github.io/master/images/l15bicolore/l15bicoloreleg.png" alt="l15bicolore-js" style="width:400px; heigth:100px;"></p>
-<code>
+<pre>
 curve1_leg = BEZIER(S1)([[0,0.35,0],[-0.8,0.35,0],[-0.8,-0.35,0],[0,-0.35,0]])
 curve2_leg = BEZIER(S1)([[2,0.35,0],[2,-0.35,0]])
 curve3_leg = BEZIER(S1)([[0,0.35,-0.2],[-0.8,0.35,-0.2],[-0.8,-0.35,-0.2],[0,-0.35,-0.2]])
@@ -127,7 +127,7 @@ map3_leg = COLOR(COLOR_BLACK)(MAP(BEZIER(S2)([curve5_leg,curve6_leg]))(domain2))
 [..]
 leg = STRUCT([map1_leg,...,map14_leg])
 
-</code>
+</pre>
 <br><br>
 This is the final L15 BICOLORE model.
 
