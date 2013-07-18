@@ -4,7 +4,7 @@
   <head>
     <meta charset='utf-8' />
     <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="Final-project : Stefania De Roberto" />
+    <meta name="description" content="Final-project : Michele Galli" />
 
     <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
 
@@ -17,145 +17,132 @@
     <!-- HEADER -->
     <div id="header_wrap" class="outer">
         <header class="inner">
-          <a id="forkme_banner" href="https://github.com/stederob/Final-Project">View on GitHub</a>
+          <a id="forkme_banner" href="https://github.com/ingmichelegalli/ingmichelegalli.github.io">View on GitHub</a>
 
           <h1 id="project_title">Final-project</h1>
-          <h2 id="project_tagline">Stefania De Roberto</h2>
+          <h2 id="project_tagline">Michele Galli</h2>
 
             <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/stederob/Final-Project/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/stederob/Final-Project/tarball/master">Download this project as a tar.gz file</a>
+              <a class="zip_download_link" href="https://github.com/ingmichelegalli/ingmichelegalli.github.iozipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/ingmichelegalli/ingmichelegalli.github.iotarball/master">Download this project as a tar.gz file</a>
             </section>
 <section id="menu">
-<button name="Home" onclick="location.href='http://stederob.github.io/Final-Project/index.html'"><font size="4"> Home</font></button>
-			<button name="Sitzmaschine" onclick="location.href='http://stederob.github.io/Final-Project/Sitzmaschine.html'"><font size="4"> Sitzmaschine</font></button>
-<button name="Melon Service" onclick="location.href='http://stederob.github.io/Final-Project/melon_service.html'"><font size="4"> Melon Service</font></button>
-	    </section>
+<button name="Home" onclick="href='ingmichelegalli.github.io/index.html'"style="height: 25px; width: 200px"><font size="4"> Home</font></button>
+      <button name="t24basequadra" onclick="location.href='https://ingmichelegalli.github.io/t24basequadra.html'"style="height: 25px; width: 200px"><font size="4"> T24 Base Quadra</font></button>
+<button name="t20fasciaspecchiata" style=”background-color:blue” onclick="location.href='https://ingmichelegalli.github.io/t20fasciaspecchiata.html'"style="height: 25px; width: 200px"><font size="4"> T20 Fascia Specchiata</font></button>
+<button name="p4catilina" onclick="location.href='https://ingmichelegalli.github.io/p4catilina.html'"style="height: 25px; width: 200px"><font size="4"> P4 Catilina</font></button>
+
+<button name="l15bicolore" onclick="location.href='https://ingmichelegalli.github.io/l15bicolore.html'"style="height: 25px; width: 200px"><font size="4"> L15 BICOLORE</font></button>
+<button name="lte5imbuto" onclick="location.href='https://ingmichelegalli.github.io/lte5imbuto.html'"style="height: 25px; width: 200px"><font size="4"> LTE5 IMBUTO</font></button>
+<button name="p17santambrogio" onclick="location.href='https://ingmichelegalli.github.io/p17santambrogio.html'"style="height: 25px; width: 205px"><font size="4"> P17 SANT'AMBROGIO</font></button>
+      </section>
+        
         </header>
     </div>
     <!-- MAIN CONTENT -->
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
-        <h1>
-<a name="josef-hoffmann" class="anchor" href="#josef-hoffmann"><span class="octicon octicon-link"></span></a>Four Nesting Table by Josef Hoffmann</h1>
-<div class="row-fluid">
-<font size ="4">
-<p align="justify">
-<p><img src="https://github.com/stederob/Final-Project/blob/gh-pages/images/nesting-table/js-basi.png?raw=true" alt="side profile" style="width:300px; heigth:300px;" align="right"></p>
-To build the "nesting table" I have defined a function (parametric than height, three points and the number of tables to be generated) that defines through a "for loop" for the role in its entirety.
 
-In particular, the function initially builds, from 3 data points, the other items necessary for the definition of all base curves.
-Subsequently generates the necessary Hermite curves and uses the "cylindrical surface" to close some edges.
-In this way I defined the base of the 4 tables.
-<pre>
-function table(punti0,punti1,punti2,n,w,d,s){
-    var tavoli = []
-	for (i=0;i'<'n;i++){
-		var cyl = cylinder(0.1,6.8-i*s)
-		var p0 = punti0.map(function(p){return[p[0]+i*s,p[1]+i*s,p[2]]});
-		var p1 = punti1.map(function(p){return[p[0]-i*s,p[1]+i*s,p[2]]});
-		var p2 = punti2.map(function(p){return[p[0]-i*s,p[1]+i*s,p[2]]});
-		var c0 = CUBIC_HERMITE(S0)([p0[0],p0[1],[-s*2,0,0],[s*2,0,0]]);
-		var c1 = CUBIC_HERMITE(S0)([p1[0],p1[1],[s*4,0,0],[0,s*4,0]]);
-		var c2 = CUBIC_HERMITE(S0)([p2[0],p2[1],[s*2,0,0],[0,s*2,0]]);
-		[...]
-		var cmap0 = MAP(CYLINDRICAL_SURFACE(c0)([0,0,s]))(dom2D);
-		var cmap1 = MAP(CYLINDRICAL_SURFACE(c1)([0,0,s]))(dom2D);
-		var cmap2 = MAP(CYLINDRICAL_SURFACE(c2)([0,0,s]))(dom2D);
-		[...]
-</pre>
-<p><img src="https://github.com/stederob/Final-Project/blob/gh-pages/images/nesting-table/js-legtable.png?raw=true" alt="side profile" style="width:200px; heigth:200px;" align="left">
-In the same way from a cylinder I built the legs of the 4 tables.</p>
-
-<pre>
-		//table leg
-		var leg1 = T([0,1])([i*s+s+0.1,i*s+0.15])(cyl)
-		var leg2 = T([0])([p1[0][0]-p0[0][0]])(leg1)
-		var leg12 = STRUCT([leg1,leg2])
-		var leg4 = T([1])([p00[0][1]-i*s-s])(leg12)
-		var table_leg = brown(STRUCT([leg12,leg4]))
-</pre>
-
+<font size="4">
+<div>
+<a name="luigidominioni" class="anchor" href="#luigidominioni"><span class="octicon octicon-link"></span></a>
+<h1>LP26B ONDA<a href="https://github.com/cvdlab-cg/427966/blob/master/final-project/javascript/lp26bonda.js">  (Code Link)</a></h1>
 <p>
-<img src="https://github.com/stederob/Final-Project/blob/gh-pages/images/nesting-table/js-piani.png?raw=true" alt="side profile" style="width:200px; heigth:200px;" align="right">
-The table tops are not all uniform. The first differs from the other 3, so I differentiated the two cases via an if statement. The table top is also not rectangular like the ones below so I used an external function to generate it.
+
+  The LP26B ONDA is a wall light formed by a single strip of electro-coloured steel scarab-beetle colour and chrome-plated studs
+  The structure of the light is similar to a wave and that is why is called "ONDA".
+
 </p>
-</br>
-<p>
-I made the decoration of the first four balls on the edge of the table with a function that generates "n" balls attached.</p>
+First of all i draw the green wave structure.
+For this purpose i used Bezier curves.
+<p><img src="https://raw.github.com/ingmichelegalli/ingmichelegalli.github.io/master/images/l15bicolore/lp26bondastructure.png" alt="lp26bonda-js" style="width:300px; heigth:30px;">
+</p>
 <pre>
-function spheres(r,n){
-	var domain_sfera = DOMAIN([[0,2*PI],[0,2*PI]])([24,36]);
-	var mapping = sphere(r);
-	var model = MAP(mapping)(domain_sfera);
-	var model1 = model;
-	for (i=1; i<'n';i++){
-		s = T([0])([i*2*r])(model)
-		model1 = STRUCT([s,model1])
-	}
-	return brown(model1);
+curve1_lamp = BEZIER(S1)([[0,0,0],[1,0,0],[3,3,0],[4,3,0],[4,0,0],[4.5,0,0]])
+curve2_lamp = BEZIER(S1)([[-2,0,-0.1],[-2,0,0],[0,0,0]])
+curve3_lamp = BEZIER(S1)([[4.5,0,0],[5.5,0,0],[5.5,0,-0.1]])
+curve4_lamp = BEZIER(S1)([[0,0,-1.5],[1,0,-1.5],[3,3,-1.5],[4,3,-1.5],[4,0,-1.5],[4.5,0,-1.5]])
+[..]
+map1_lamp = MAP(BEZIER(S2)([curve1_lamp,curve4_lamp]))(domain2)
+map2_lamp = MAP(BEZIER(S2)([curve2_lamp,curve5_lamp]))(domain2)
+map3_lamp = MAP(BEZIER(S2)([curve3_lamp,curve6_lamp]))(domain2)
+map4_lamp = MAP(BEZIER(S2)([curve4_lamp,curve10_lamp]))(domain2)
+[..]
+lamp_structure = STRUCT([map1_lamp,..,map12_lamp])
+
+</pre>
+
+<br><br>
+Then i draw the bulb light.
+I wrote some Bezier-based function to help me with this object.
+The glass of thebulb is realized with a 'SEMISPHERE' function
+
+</font>
+
+<p><img src="https://raw.github.com/ingmichelegalli/ingmichelegalli.github.io/master/images/l15bicolore/lp26bondalight.png" alt="lp26bonda-js" style="width:400px; heigth:100px;"></p></h2>
+
+<pre>
+semicircle_a = function(x1,y1,z,tx,ty,tz1,tz2){
+  semix = x1/2
+  semia = BEZIER(S1)([[tx+semix,ty,z+tz1],[tx+semix,ty+y1,z+tz2],[tx-semix,ty+y1,z+tz2],[tx-semix,ty,z+tz1]])
+  return semia
 }
+
+semicircle_b = function(x1,y1,z,tx,ty,tz1,tz2){
+  semix = x1/2
+  semib = BEZIER(S1)([[tx+semix,ty,z+tz1],[tx+semix,-y1+ty,z+tz2],[tx-semix,-y1+ty,z+tz2],[tx-semix,ty,z+tz1]])
+  return semib
+}
+
+var SEMISPHERE = function (r) {
+  var domain = DOMAIN([[0, PI], [0, PI]])([50,50]);
+  var mapping = function (v) {
+    var a = v[0];
+    var b = v[1];
+    return [r*SIN(a)*COS(b), r/2*SIN(a)*SIN(b), r*COS(a)];
+  };
+  var model = MAP(mapping)(domain);
+  return model;
+};
+
+[..]
+curve1a_light = semicircle_a(1.2,0.85,0.1,0,0,0,0)
+curve1b_light = semicircle_b(1.2,0.85,0.1,0,0,0,0)
+curve2a_light = semicircle_a(1.2,0.85,0.15,0,0,0,0)
+curve2b_light = semicircle_b(1.2,0.85,0.15,0,0,0,0)
+curve3a_light = semicircle_a(1.1,0.75,0.15,0,0,0,0)
+curve3b_light = semicircle_b(1.1,0.75,0.15,0,0,0,0)
+[..]
+map1_light = COLOR([255/255,255/255,0/255])(MAP(BEZIER(S2)([curve1a_light,curve1b_light]))(domaininv))
+map2_light = COLOR([61/255,61/255,61/255])(MAP(BEZIER(S2)([curve2a_light,curve2b_light]))(domain2))
+map3_light = COLOR([61/255,61/255,61/255])(MAP(BEZIER(S2)([curve1a_light,curve2a_light]))(domain2))
+[..]
+light = STRUCT([map1_light,..,map14_light])
+glass_light = SEMISPHERE(0.64);
+
 </pre>
 
-Finally I put the pieces generated together and initialized an array containing the 4 tables separately so that you can manipulate them as individual objects.
-<pre>
-		[...]		
-		var table = STRUCT([basis,table_leg,cub])
-		tavoli[i] = table
-		}
-	return tavoli;
-</pre>
+<br><br>
+Finally i added the studs.
 
+<br><br>
+This is the final LP26B ONDA model.
 
-
-This is the result obtained in javascript and python.</p>
-<div align="center">
-<h2> Joined tables </h2>
-<figure>
-<p><img src="https://github.com/stederob/Final-Project/blob/gh-pages/images/nestingTable.jpg?raw=true" style="width:300px; heigth:300px;">
-    <figcaption>
-        <p>Original Model</p>
-    </figcaption>
-</figure>
+<p><img src="https://raw.github.com/ingmichelegalli/ingmichelegalli.github.io/master/images/l15bicolore/lp26bondamodel.png" style="width:500px; heigth:500px;">
+  <br><br>
+  This is the original model.
+  <p><img src="https://raw.github.com/cvdlab-cg/427966/master/final-project/images/lp26bonda.jpg" style="width:500px; heigth:300px;">
+  <br><br><br><br><br><br><br>
 </div>
+</font>
 
-
-<p><img src="https://github.com/stederob/Final-Project/blob/gh-pages/images/nesting-table/js-tavoliuniti.png?raw=true" alt="Josef Hoffmann" style="width:270px; heigth:270px;" align="left">
-
-<img src="https://github.com/stederob/Final-Project/blob/gh-pages/images/nesting-table/py-tavoliuniti.png?raw=true" alt="Josef Hoffmann" style="width:300px; heigth:300px;"></p>
-</br>
-<div align="center">
-<h2>Separate tables</h2>
-
-<figure>
-<p><img src="https://github.com/stederob/Final-Project/blob/gh-pages/images/nestingTable1.jpg?raw=true" style="width:300px; heigth:300px;">
-    <figcaption>
-        <p>Original Model</p>
-    </figcaption>
-</figure>
-</div>
-
-
-<p><img src="https://github.com/stederob/Final-Project/blob/gh-pages/images/nesting-table/js-tavoliseparati.png?raw=true" alt="Josef Hoffmann" style="width:300px; heigth:300px;">
-
-<img src="https://github.com/stederob/Final-Project/blob/gh-pages/images/nesting-table/py-tavoliseparati.png?raw=true" alt="Josef Hoffmann" style="width:300px; heigth:300px;">
-</p>
-</div>
-  
-</div>
-
-
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
       </section>
     </div>
 
-    <!-- FOOTER  -->
+     <!-- FOOTER  -->
     <div id="footer_wrap" class="outer">
       <footer class="inner">
-        <p class="copyright">Final-project maintained by <a href="https://github.com/stederob">stederob</a></p>
+        <p class="copyright">Final-project maintained by <a href="https://github.com/ingmichelegalli">Michele Galli</a></p>
         <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
       </footer>
     </div>
