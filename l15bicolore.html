@@ -90,7 +90,7 @@ front = STRUCT([map1_front,...,map12_front])))
 frontup = STRUCT([map1_frontup,...,map14_frontup])
 </pre>
 
-
+<br><br>
 After that i realized the mattress with the grid structure.
 Ifirst made one vertical and one horizontal stripe and then i wrote a function to repeat them to create the grid.
 The external structure is made with four cuboid functions.
@@ -112,11 +112,11 @@ grid_vertical = CUBOID([0.05,7.8,0.01])
 grid_verticals = repeatTraslation(grid_vertical,1,0.1,57)
 </pre>
 
-
+<br><br>
 Finally i did the legs of the bed.
 The legs have the same pattern of the up headboard and they are made by two parts
 <p><img src="https://raw.github.com/ingmichelegalli/ingmichelegalli.github.io/master/images/l15bicolore/l15bicoloreleg.png" alt="l15bicolore-js" style="width:400px; heigth:100px;"></p>
-<pre>
+<code>
 curve1_leg = BEZIER(S1)([[0,0.35,0],[-0.8,0.35,0],[-0.8,-0.35,0],[0,-0.35,0]])
 curve2_leg = BEZIER(S1)([[2,0.35,0],[2,-0.35,0]])
 curve3_leg = BEZIER(S1)([[0,0.35,-0.2],[-0.8,0.35,-0.2],[-0.8,-0.35,-0.2],[0,-0.35,-0.2]])
@@ -127,11 +127,11 @@ map3_leg = COLOR(COLOR_BLACK)(MAP(BEZIER(S2)([curve5_leg,curve6_leg]))(domain2))
 [..]
 leg = STRUCT([map1_leg,...,map14_leg])
 
-</pre>
-
+</code>
+<br><br>
 This is the final L15 BICOLORE model.
 
-<p><img src="https://raw.github.com/ingmichelegalli/ingmichelegalli.github.io/master/images/l15bicolore/l15bicolorefinalmodel.png" style="width:400px; heigth:400px;">
+<p><img src="https://raw.github.com/ingmichelegalli/ingmichelegalli.github.io/master/images/l15bicolore/l15bicolorefinalmodel.png" style="width:500px; heigth:500px;">
   <br><br><br><br><br><br><br>
 </div>
 </font>
