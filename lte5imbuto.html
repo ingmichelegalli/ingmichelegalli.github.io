@@ -4,7 +4,7 @@
   <head>
     <meta charset='utf-8' />
     <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="Final-project : Stefania De Roberto" />
+    <meta name="description" content="Final-project : Michele Galli" />
 
     <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
 
@@ -17,111 +17,123 @@
     <!-- HEADER -->
     <div id="header_wrap" class="outer">
         <header class="inner">
-          <a id="forkme_banner" href="https://github.com/stederob/Final-Project">View on GitHub</a>
+          <a id="forkme_banner" href="https://github.com/ingmichelegalli/ingmichelegalli.github.io">View on GitHub</a>
 
           <h1 id="project_title">Final-project</h1>
-          <h2 id="project_tagline">Stefania De Roberto</h2>
+          <h2 id="project_tagline">Michele Galli</h2>
 
             <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/stederob/Final-Project/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/stederob/Final-Project/tarball/master">Download this project as a tar.gz file</a>
+              <a class="zip_download_link" href="https://github.com/ingmichelegalli/ingmichelegalli.github.iozipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/ingmichelegalli/ingmichelegalli.github.iotarball/master">Download this project as a tar.gz file</a>
             </section>
 <section id="menu">
-<button name="Home" onclick="location.href='http://stederob.github.io/Final-Project/index.html'"><font size="4"> Home</font></button>
-<button name="Nesting Table" style=”background-color:blue” onclick="location.href='http://stederob.github.io/Final-Project/nesting_Table.html'"><font size="4"> Nesting Table</font></button>
-<button name="Melon Service" onclick="location.href='http://stederob.github.io/Final-Project/melon_service.html'"><font size="4"> Melon Service</font></button>
-	    </section>
+<button name="Home" onclick="href='ingmichelegalli.github.io/index.html'"style="height: 25px; width: 200px"><font size="4"> Home</font></button>
+      <button name="t24basequadra" onclick="location.href='https://ingmichelegalli.github.io/t24basequadra.html'"style="height: 25px; width: 200px"><font size="4"> T24 Base Quadra</font></button>
+<button name="t20fasciaspecchiata" style=”background-color:blue” onclick="location.href='https://ingmichelegalli.github.io/t20fasciaspecchiata.html'"style="height: 25px; width: 200px"><font size="4"> T20 Fascia Specchiata</font></button>
+<button name="p4catilina" onclick="location.href='https://ingmichelegalli.github.io/p4catilina.html'"style="height: 25px; width: 200px"><font size="4"> P4 Catilina</font></button>
+
+<button name="lp26bonda" onclick="location.href='https://ingmichelegalli.github.io/lp26bonda.html'"style="height: 25px; width: 200px"><font size="4"> LP26B ONDA</font></button>
+<button name="l15bicolore" onclick="location.href='https://ingmichelegalli.github.io/l15bicolore.html'"style="height: 25px; width: 200px"><font size="4"> LTE5 IMBUTO</font></button>
+<button name="p17santambrogio" onclick="location.href='https://ingmichelegalli.github.io/p17santambrogio.html'"style="height: 25px; width: 205px"><font size="4"> P17 SANT'AMBROGIO</font></button>
+      </section>
+        
         </header>
     </div>
     <!-- MAIN CONTENT -->
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
-        <h1>
-<a name="josef-hoffmann" class="anchor" href="#josef-hoffmann"><span class="octicon octicon-link"></span></a>Sitzmaschine chair by Josef Hoffmann</h1>
-<div class="row-fluid">
-<font size ="4">
-<p><img src="https://github.com/stederob/Final-Project/blob/gh-pages/images/Sitzmaschine/Sitzmaschine-profile-side.png?raw=true" alt="side profile" style="width:250px; heigth:250px;" align="right">
-I started playing the lateral part through the use of "cylindrical surface function" and Hermite's curves  (lend themselves better to circular shapes), paying attention to the fact that the curve is tightened down.
-</p>
+
+<font size="4">
+<div>
+<a name="luigidominioni" class="anchor" href="#luigidominioni"><span class="octicon octicon-link"></span></a>
+<h1>LTE5 IMBUTO<a href="https://github.com/cvdlab-cg/427966/blob/master/final-project/javascript/lte5imbuto.js">  (Code Link)</a></h1>
 <p>
-<img src="https://github.com/stederob/Final-Project/blob/gh-pages/images/Sitzmaschine/Sitzmaschine-profileside-with-hole.png?raw=true" alt="profile with hole" style="width:250px; heigth:250px;" align="left">
-I then made ​​the finish side with the holes using a function that takes the coordinates (x, y, z), the size of the hole and the number of holes and automatically generates the desired shape.
+
+THE LTE5 IMBUTO is a very elegant Floor lamp whith a base in black painted cast iron, a stem in polished brass and cone-shaped reflector in metallic grey aluminium.
+
+</p>
+I started drawing the funnel and the light inside.
+I used BEZIER-based functions made by me.
+<p><img src="https://raw.github.com/ingmichelegalli/ingmichelegalli.github.io/master/images/lte5imbuto/lte5imbutofunnel.png" alt="lte5imbuto-js" style="width:300px; heigth:30px;">
 </p>
 <pre>
-function wall_y_with_hole(dx,dy,dz,hole_y,hole_z,hole_dy,hole_dz) {
-	var g1 = SIMPLEX_GRID (([[dx],[hole_y,-hole_dy, dy-hole_y-hole_dy],[dz]]))
-	var g2 = SIMPLEX_GRID ([[dx],[-hole_y, hole_dy],[hole_z, -hole_dz,dz-hole_z-hole_dz]])
-	var g = STRUCT([g1,g2]);
-	return g;
+  semicircle_a = function(x1,y1,z,tx,ty,tz1,tz2){
+  semix = x1/2
+  semia = BEZIER(S1)([[tx+semix,ty,z+tz1],[tx+semix,ty+y1,z+tz2],[tx-semix,ty+y1,z+tz2],[tx-semix,ty,z+tz1]])
+  return semia
 }
 
-function wall_y_with_N_hole(dx,dy,dz,hole_y,hole_z,hole_dy,hole_dz,n){
-	var f = wall_y_with_hole(dx,dy,dz,hole_y,hole_z,hole_dy,hole_dz);
-	var t = f;
-	for(i=1; i'<'n; i++){
-		t = STRUCT([t,T([1])([i*dy])(f)])
-	}
-	return t;
+semicircle_b = function(x1,y1,z,tx,ty,tz1,tz2){
+  semix = x1/2
+  semib = BEZIER(S1)([[tx+semix,ty,z+tz1],[tx+semix,-y1+ty,z+tz2],[tx-semix,-y1+ty,z+tz2],[tx-semix,ty,z+tz1]])
+  return semib
 }
+
+var SEMISPHERE = function (r) {
+  var domain = DOMAIN([[0, PI], [0, PI]])([50,50]);
+  var mapping = function (v) {
+    var a = v[0];
+    var b = v[1];
+    return [r*SIN(a)*COS(b), r/2*SIN(a)*SIN(b), r*COS(a)];
+  };
+  var model = MAP(mapping)(domain);
+  return model;
+};
+[..]
+curve1a_funnel = semicircle_a(3,2,0,0,0,0,0)
+curve1b_funnel = semicircle_b(3,2,0,0,0,0,0)
+[..]
+map1_funnel = MAP(BEZIER(S2)([curve1a_funnel,curve2a_funnel]))(domain2)
+map2_funnel = MAP(BEZIER(S2)([curve1b_funnel,curve2b_funnel]))(domain2)
+[..]
+
+funnel = STRUCT([map1_funnel,..,map5_funnel])
+
 </pre>
 
-I made balls decoration on the sides and under the seat managing the domains to obtain hemispheres when desired.
+<br><br>
+Then i draw the long gold body e and the base.
+I re-used the functions i wrote before.
+</font>
+
+<p><img src="https://raw.github.com/ingmichelegalli/ingmichelegalli.github.io/master/images/lte5imbuto/lte5imbutobody.png" alt="lte5imbuto-js" style="width:400px; heigth:100px;"></p></h2>
+
 <pre>
-var domain_sfera = DOMAIN([[0,2*PI],[0,2*PI]])([24,36]);
-var sfera = function(r){
-	return function(v){
-	return [r*SIN(v[0])*COS(v[1]),r*SIN(v[0])*SIN(v[1]),r*COS(v[0])]
-	}
-}
+curve1a_body = semicircle_a(0.2,0.15,18,0,0,0,0)
+curve1b_body = semicircle_b(0.2,0.15,18,0,0,0,0)
+curve2a_body = semicircle_a(2.2,1.3,18,0,0,0,0)
+curve2b_body = semicircle_b(2.2,1.3,18,0,0,0,0)
+[..]
+map1_body = COLOR([255/255,193/255,37/255])(MAP(BEZIER(S2)([curve3a_funnel,curve1a_body]))(domain2))
+map2_body = COLOR([255/255,193/255,37/255])(MAP(BEZIER(S2)([curve3b_funnel,curve1b_body]))(domain2))
+[..]
+body = STRUCT([map1_body,..,map6_body])
+
 </pre>
-or
-<pre>
-var domain_kb = DOMAIN([[-PI/2, PI/2],[-PI/2,PI/2]])([24,36]);
-</pre>
-<p align='justify'><img src="https://github.com/stederob/Final-Project/blob/gh-pages/images/Sitzmaschine/schienale.png?raw=true" alt="front profile" style="width:300px; heigth:300px;" align="right">
-Then I rebuilt the front seat with simple drawing of Hermite and Bezier curves and back using the "simplex grid" to shape the holes.
-</p>
-<p><img src="https://github.com/stederob/Final-Project/blob/gh-pages/images/Sitzmaschine/Sitzmaschine-js-lato.png?raw=true" alt="knob & profile" style="width:300px; heigth:300px;" align="left"></p>
 
-Finally I realized the functional details such as hinges between the backrest and seat and the rod for adjusting the backrest.
+<br><br>
+This is the final LTE5 IMBUTO model.
 
-<p> 
-This is the result obtained in javascript and python.</p>
-<p>
-<div align="center">
-<figure>
-<img src="https://github.com/stederob/Final-Project/blob/gh-pages/images/Sitzmachine.jpg?raw=true" alt="Josef Hoffmann" style="width:300px; heigth:300px;" >
-    <figcaption>
-        <p>Original Model</p>
-    </figcaption>
-</figure>
-
-</div>
-</p>
-
-<img src="https://github.com/stederob/Final-Project/blob/gh-pages/images/Sitzmaschine/Sitzmaschine-javascript.png?raw=true" alt="Josef Hoffmann" "javascript result" style="width:300px; heigth:300px;">
-<img src="https://github.com/stederob/Final-Project/blob/gh-pages/images/Sitzmaschine/Sitzmaschine-python.png?raw=true" alt="Josef Hoffmann"  style="width:310px; heigth:310px;"/>
-
+<p><img src="https://raw.github.com/ingmichelegalli/ingmichelegalli.github.io/master/images/lte5imbuto/lte5imbutomodel.png" style="width:500px; heigth:200px;">
+  <br><br>
+  This is the original model.
+  <p><img src="https://raw.github.com/cvdlab-cg/427966/master/final-project/images/lte5imbuto.jpg" style="width:500px; heigth:200px;">
+  <br><br><br><br><br><br><br>
 </div>
 </font>
-</div>
-</div>
 
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
       </section>
     </div>
 
-    <!-- FOOTER  -->
+     <!-- FOOTER  -->
     <div id="footer_wrap" class="outer">
       <footer class="inner">
-        <p class="copyright">Final-project maintained by <a href="https://github.com/stederob">stederob</a></p>
+        <p class="copyright">Final-project maintained by <a href="https://github.com/ingmichelegalli">Michele Galli</a></p>
         <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
       </footer>
     </div>
 
-<!-- Placed at the end of the document so the pages load faster -->
+    
 
   </body>
 </html>
