@@ -4,7 +4,7 @@
   <head>
     <meta charset='utf-8' />
     <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="Final-project : Stefania De Roberto" />
+    <meta name="description" content="Final-project : Michele Galli" />
 
     <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
 
@@ -17,94 +17,104 @@
     <!-- HEADER -->
     <div id="header_wrap" class="outer">
         <header class="inner">
-          <a id="forkme_banner" href="https://github.com/stederob/Final-Project">View on GitHub</a>
+          <a id="forkme_banner" href="https://github.com/ingmichelegalli/ingmichelegalli.github.io">View on GitHub</a>
 
           <h1 id="project_title">Final-project</h1>
-          <h2 id="project_tagline">Stefania De Roberto</h2>
+          <h2 id="project_tagline">Michele Galli</h2>
 
             <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/stederob/Final-Project/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/stederob/Final-Project/tarball/master">Download this project as a tar.gz file</a>
+              <a class="zip_download_link" href="https://github.com/ingmichelegalli/ingmichelegalli.github.iozipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/ingmichelegalli/ingmichelegalli.github.iotarball/master">Download this project as a tar.gz file</a>
             </section>
+<section id="menu">
+<button name="Home" onclick="href='ingmichelegalli.github.io/index.html'"style="height: 25px; width: 200px"><font size="4"> Home</font></button>
+      <button name="t24basequadra" onclick="location.href='https://ingmichelegalli.github.io/t24basequadra.html'"style="height: 25px; width: 200px"><font size="4"> T24 Base Quadra</font></button>
+<button name="t20fasciaspecchiata" style=”background-color:blue” onclick="location.href='https://ingmichelegalli.github.io/t20fasciaspecchiata.html'"style="height: 25px; width: 200px"><font size="4"> T20 Fascia Specchiata</font></button>
+<button name="lte5imbuto" onclick="location.href='https://ingmichelegalli.github.io/lte5imbuto.html'"style="height: 25px; width: 200px"><font size="4"> LTE5 IMBUTO</font></button>
 
-	<section id="menu">
-	<button name="Home" onclick="location.href='http://stederob.github.io/Final-Project/index.html'"><font size="4"> Home</font></button>
-	<button name="Sitzmaschine" onclick="location.href='http://stederob.github.io/Final-Project/Sitzmaschine.html'"><font size="4"> Sitzmaschine</font></button>
-	<button name="Nesting Table" style=”background-color:blue” onclick="location.href='http://stederob.github.io/Final-Project/nesting_Table.html'"><font size="4"> Nesting Table</font></button>
-	<button name="Melon Service" onclick="location.href='http://stederob.github.io/Final-Project/melon_service.html'"><font size="4"> Melon Service</font></button>
-	</section>
+<button name="lp26bonda" onclick="location.href='https://ingmichelegalli.github.io/lp26bonda.html'"style="height: 25px; width: 200px"><font size="4"> LP26B ONDA</font></button>
+<button name="l15bicolore" onclick="location.href='https://ingmichelegalli.github.io/l15bicolore.html'"style="height: 25px; width: 200px"><font size="4"> L15 BICOLORE</font></button>
+<button name="p4catilina" onclick="location.href='https://ingmichelegalli.github.io/p4catilina.html'"style="height: 25px; width: 200px"><font size="4"> P4 CATILINA</font></button>
+      </section>
+        
         </header>
     </div>
     <!-- MAIN CONTENT -->
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
-        <h1>
-<a name="josef-hoffmann" class="anchor" href="#josef-hoffmann"><span class="octicon octicon-link"></span></a>Carafe</h1>
-<font size ="4">
+
+<font size="4">
 <div>
-<p><img src="https://github.com/stederob/Final-Project/blob/gh-pages/images/melon%20service/js-carafe-spouth.png?raw=true" alt="spouth-carafe-js" style="width:180px; heigth:180px;" align="right">
-<p>To build the carafe I made half of the figure.
-</p><p>
-To build the spouth and the back part I used the "Coons patch" by defining the two vertical lines via Bezier's curves and the two horizontal lines by Hermite's curves.</p>
-
-<p><img src="https://github.com/stederob/Final-Project/blob/gh-pages/images/melon%20service/js-carafe-form.png?raw=true" alt="carafe-form-js" style="width:280px; heigth:280px;" align="lft">
-
-</br>Each circular sector have different heights and it was generated individually, using two horizontal curves: a curve of Hermite that follows the semi-circumference and a Bezier's curve that achieves the upper edge.
-Then I used a function to generate the surface</p>
-
+<a name="luigidominioni" class="anchor" href="#luigidominioni"><span class="octicon octicon-link"></span></a>
+<h1>P17 SANT'AMBROGIO<a href="https://github.com/cvdlab-cg/427966/blob/master/final-project/javascript/p17santambrogio.js">  (Code Link)</a></h1>
+<p>
+The P17 SANT'AMBROGIO is a TWO-seaters sofa covered in green mohair velvet
+</p>
+First of all i have made the sides of the sofa. The shape is drew with the Bezier function. I drew the left side and then i replicated it for the right side.
+<p><img src="https://raw.github.com/ingmichelegalli/ingmichelegalli.github.io/master/images/p17santambrogio/p17santambrogiosides.png" alt="p17santambrogio-js" style="width:400px; heigth:100px;">
+</p>
 <pre>
-function move(p,h,s){
-	var p1 = p;
-	p1[0] = [p[0][0]+s[0],p[0][1]+s[1],p[0][2]+h];
-	p1[1] = [p[1][0]+s[0],p[1][1]+s[1],p[1][2]+h];
-	return p1;
-}
-
-function side_form(p1,p2,s){
-	var c0 = CUBIC_HERMITE(S0)(p1)
-	var c1 = CUBIC_HERMITE(S0)(move(p1,0.5,[0,s*0.5,0]))
-	var c2 = CUBIC_HERMITE(S0)(move(p1,1.8,[0,s*0.3,0]))
-	var c3 = BEZIER(S0)(p2)
-	var b2 = MAP(BEZIER(S1)([c0,c1,c2,c3]))(dom2D)
-	return b2;
-}
+curve1_sideleft = BEZIER(S1)([[0.5,0.2,0],[-0.3,0.2,0],[-1.7,0.2,0],[-1.7,0,0],[-2.3,-0.6,0],[-2.7,-3,0],[-3.3,-3.3,0]]) 
+curve2_sideleft = BEZIER(S1)([[-3.3,-3.3,0],[-6,-3.3,0],[-8.9,-3.4,0]]) 
+[..]
+map1_sideleft = MAP(BEZIER(S2)([curve1_sideleft,curve13_sideleft,curve7_sideleft]))(domain2)
+map2_sideleft = MAP(BEZIER(S2)([curve2_sideleft,curve14_sideleft,curve8_sideleft]))(domain2)
+[..]
+sideleft = STRUCT([map1_sideleft,map2_sideleft,..,close_sideleft])
+sideright = T([3])([-12])(sideleft)
 </pre>
 
+<br><br>
+After that i realized the internal structure of the sofa.
+The backrest, the down part and the padding under the pillows.
+</font>
 
-</br>
-<p>The handle was designed by Coons patches.
+<p><img src="https://raw.github.com/ingmichelegalli/ingmichelegalli.github.io/master/images/p17santambrogio/p17santambrogiobackrest.png" alt="p17santambrogio-js" style="width:400px; heigth:100px;"></p></h2>
 
-<img src="https://github.com/stederob/Final-Project/blob/gh-pages/images/melon%20service/js-carafe-handle.png?raw=true" alt="handle-carafe-js" style="width:200px; heigth:200px;" align="left"></p>
-</br>
-
-Then to realize the other half of the figure I rotated the points relative to the y axis through a function.
 <pre>
-function rotate(punti,v){
-	var p1 = punti;
-	var p1 = p1.map(function(p){return[p[0]*v[0],p[1]*v[1],p[2]*v[2]]});
-	return p1;
-}
+curve1_backrest = BEZIER(S1)([[0.2,-7.2,-12],[0.7,-7.2,-12],[0.7,-6.9,-12],[0.7,0,-12]])
+curve2_backrest = BEZIER(S1)([[0.69,-0.05,-1],[0.69,-0.05,-12]])
+[..]
+map1_backrest = S([1,2,3])([1,1.2,1])(MAP(BEZIER(S2)([curve5_sideleft,curve1_backrest]))(domain2))
+map2_backrest = S([1,2,3])([1,1.2,1])(MAP(BEZIER(S2)([curve2_backrest,curve3_backrest,curve4_backrest]))(domain2))
+[..]
+backrest = STRUCT([map1_backrest,..,map5_backrest])
+
 </pre>
-To build the edge at the base I generated a sector and I rotated of PI/5 to fill the entire surface.
-This is the result obtained in javascript and python.
+<br><br>
+Finally i drew the pillows.There are little pillows and big pillows. 
+One big pillow with a little pillow make a seat. I realized one seat and then i replicated it for the second.
+</font>
 
-<img src="https://github.com/stederob/Final-Project/blob/gh-pages/images/melon%20service/js-carafe.png?raw=true" alt="sugar-bowl-js" style="width:300px; heigth:300px;">
+<p><img src="https://raw.github.com/ingmichelegalli/ingmichelegalli.github.io/master/images/p17santambrogio/p17santambrogiopillow.png" alt="p17santambrogio-js" style="width:400px; heigth:100px;"></p></h2>
 
-<img src="https://github.com/stederob/Final-Project/blob/gh-pages/images/melon%20service/py-carafe.png?raw=true" style="width:300px; heigth:30px;">
+<pre>
+curve1_littlepillow = BEZIER(S1)([[2.7,0,0], [2.7,0.3,0],[-2.7,0.3,0],[-2.7,0,0]])
+curve2_littlepillow = BEZIER(S1)([[2.7,-3,0],[2.7,-3.3,0],[-2.7,-3.3,0],[-2.7,-3,0]])
+[..]
+map1_littlepillow = MAP(BEZIER(S2)([curve1_littlepillow,curve9_littlepillow,curve2_littlepillow]))(domain2)
+map2_littlepillow = MAP(BEZIER(S2)([curve3_littlepillow,curve4_littlepillow]))(domain2)
+[..]
+littlepillow1 = STRUCT([map1_littlepillow,..,map6_littlepillow])
+bigpillow1 = S([1,2,3])([1.4,1,1])(littlepillow1)
+</pre>
+<br><br>
+These are the final P17 SANT'AMBROGIO model and the original model.
+
+<p><img src="https://raw.github.com/ingmichelegalli/ingmichelegalli.github.io/master/images/p17santambrogio/p17santambrogio.png" style="width:400px; heigth:200px;"float ="right">
+ <img src="https://raw.github.com/cvdlab-cg/427966/master/final-project/images/p17santambrogio.jpg" style="width:400px; heigth:200px;"float ="left">
+  </p>
+  <br><br><br><br><br><br><br>
 </div>
 </font>
 
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
       </section>
     </div>
 
-    <!-- FOOTER  -->
+     <!-- FOOTER  -->
     <div id="footer_wrap" class="outer">
       <footer class="inner">
-        <p class="copyright">Final-project maintained by <a href="https://github.com/stederob">stederob</a></p>
+        <p class="copyright">Final-project maintained by <a href="https://github.com/ingmichelegalli">Michele Galli</a></p>
         <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
       </footer>
     </div>
