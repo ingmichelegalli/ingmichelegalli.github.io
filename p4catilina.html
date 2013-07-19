@@ -4,7 +4,7 @@
   <head>
     <meta charset='utf-8' />
     <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="Final-project : Stefania De Roberto" />
+    <meta name="description" content="Final-project : Michele Galli" />
 
     <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
 
@@ -17,93 +17,124 @@
     <!-- HEADER -->
     <div id="header_wrap" class="outer">
         <header class="inner">
-          <a id="forkme_banner" href="https://github.com/stederob/Final-Project">View on GitHub</a>
+          <a id="forkme_banner" href="https://github.com/ingmichelegalli/ingmichelegalli.github.io">View on GitHub</a>
 
           <h1 id="project_title">Final-project</h1>
-          <h2 id="project_tagline">Stefania De Roberto</h2>
+          <h2 id="project_tagline">Michele Galli</h2>
 
             <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/stederob/Final-Project/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/stederob/Final-Project/tarball/master">Download this project as a tar.gz file</a>
+              <a class="zip_download_link" href="https://github.com/ingmichelegalli/ingmichelegalli.github.iozipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/ingmichelegalli/ingmichelegalli.github.iotarball/master">Download this project as a tar.gz file</a>
             </section>
 <section id="menu">
-<button name="Home" onclick="location.href='http://stederob.github.io/Final-Project/index.html'"><font size="4"> Home</font></button>
-			<button name="Sitzmaschine" onclick="location.href='http://stederob.github.io/Final-Project/Sitzmaschine.html'"><font size="4"> Sitzmaschine</font></button>
-<button name="Nesting Table" style=”background-color:blue” onclick="location.href='http://stederob.github.io/Final-Project/nesting_Table.html'"><font size="4"> Nesting Table</font></button>
-<button name="Melon Service" onclick="location.href='http://stederob.github.io/Final-Project/melon_service.html'"><font size="4"> Melon Service</font></button>
-	    </section>
+<button name="Home" onclick="href='ingmichelegalli.github.io/index.html'"style="height: 25px; width: 200px"><font size="4"> Home</font></button>
+      <button name="t24basequadra" onclick="location.href='https://ingmichelegalli.github.io/t24basequadra.html'"style="height: 25px; width: 200px"><font size="4"> T24 Base Quadra</font></button>
+<button name="t20fasciaspecchiata" style=”background-color:blue” onclick="location.href='https://ingmichelegalli.github.io/t20fasciaspecchiata.html'"style="height: 25px; width: 200px"><font size="4"> T20 Fascia Specchiata</font></button>
+<button name="lte5imbuto" onclick="location.href='https://ingmichelegalli.github.io/lte5imbuto.html'"style="height: 25px; width: 200px"><font size="4"> LTE5 IMBUTO</font></button>
+
+<button name="lp26bonda" onclick="location.href='https://ingmichelegalli.github.io/lp26bonda.html'"style="height: 25px; width: 200px"><font size="4"> LP26B ONDA</font></button>
+<button name="l15bicolore" onclick="location.href='https://ingmichelegalli.github.io/l15bicolore.html'"style="height: 25px; width: 200px"><font size="4"> L15 BICOLORE</font></button>
+<button name="p17santambrogio" onclick="location.href='https://ingmichelegalli.github.io/p17santambrogio.html'"style="height: 25px; width: 205px"><font size="4"> P17 SANT'AMBROGIO</font></button>
+      </section>
+        
         </header>
     </div>
     <!-- MAIN CONTENT -->
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
-        <h1>
-<a name="josef-hoffmann" class="anchor" href="#josef-hoffmann"><span class="octicon octicon-link"></span></a>Cup</h1>
+
 <font size="4">
 <div>
+<a name="luigidominioni" class="anchor" href="#luigidominioni"><span class="octicon octicon-link"></span></a>
+<h1>P4 CATILINA<a href="https://github.com/cvdlab-cg/427966/blob/master/final-project/javascript/p4catilina.js">  (Code Link)</a></h1>
 <p>
-Since the very geometric shape of the cup I thought I'd build a field for each element and rotate it around the z axis.<p>
-<p><img src="https://github.com/stederob/Final-Project/blob/gh-pages/images/melon%20service/js-saucerbottom.png?raw=true" style="width:250px; heigth:250px;" align="left">
-I have therefore created the bottom of the saucer creating a circular sector through the function 'arc' and a rotation.
-<pre>
-function arc(alpha,r,R){
-	var domain = DOMAIN([[0,alpha], [r,R]])([36,1]);
-	var mapping = function(v){
-		var a = v[0];
-		var r = v[1];
-		return [r*COS(a), r*SIN(a)];
-	};
-	var model = MAP(mapping)(domain);
-	return model;
-};
-</pre>
+The P4 CATILINA is a chair in metallic brown iron, brown gloss-lacquered seat, cushion in expanded polyurethane covered in Azucena leather.
 
-<p><img src="https://github.com/stederob/Final-Project/blob/gh-pages/images/melon%20service/js-partial-saucer-form.png?raw=true" style="width:150px; heigth:150px;" align="right">
+</p>
+The first thing i have made was the structure of the chair.
+I made the semicircular base, the legs and the base support for the pillow, using some ad-hoc bezier functions.
 
-I then defined the form of a single sector of the saucer through the Coons patch, I replicated and I colored one white and the other black.
-<img src="https://github.com/stederob/Final-Project/blob/gh-pages/images/melon%20service/js-saucer.png?raw=true" style="width:250px; heigth:250px;" align="left"></p>
-</br><p>Turning then the figure you get the saucer.</p>
+<p><img src="https://raw.github.com/ingmichelegalli/ingmichelegalli.github.io/master/images/p4catilina/p4catilinastructure.png" alt="p4catilina-js" style="width:300px; heigth:30px;">
+</p>
 <pre>
-function rotate_form(partial,axes,angle,n){
-	var form = partial
-	var f = partial
-	for (i=0; i<'n'; i++){
-		f = R(axes)(angle)(f)
-		form = STRUCT([form,f])
-	}
-	return form;
+semicircle_a = function(x1,y1,z,tx,ty,tz1,tz2){
+  semix = x1/2
+  semia = BEZIER(S1)([[tx+semix,ty,z+tz1],[tx+semix,ty+y1,z+tz2],[tx-semix,ty+y1,z+tz2],[tx-semix,ty,z+tz1]])
+  return semia
 }
-</pre>
-<p>
-I followed the same procedure to generate the cup. From a sector I got a cup by turning of PI/3.
-</br>
-<img src="https://github.com/stederob/Final-Project/blob/gh-pages/images/melon%20service/js-partial-cup-form.png?raw=true" alt="handle-carafe-js" style="width:288px; heigth:288px;" align="left">
-<img src="https://github.com/stederob/Final-Project/blob/gh-pages/images/melon%20service/js-cup-form.png?raw=true" alt="cup-form-js" style="width:327px; heigth:327px;" align="right"></p>
-</br>
-</br>
-</br>
-</br>
-<p>
-I then designed the handle using Coons patches, drawing curves using Bezier curves.</p>
-<img src="https://github.com/stederob/Final-Project/blob/gh-pages/images/melon%20service/js-cup-handle.png?raw=true" alt="handle-cup-js" style="width:250px; heigth:250px;">
-<p>This is the result obtained in python and javascript</p>
 
-<p><img src="https://github.com/stederob/Final-Project/blob/gh-pages/images/melon%20service/js-cup.png?raw=true" alt="sugar-bowl-js" style="width:300px; heigth:300px;">
-<img src="https://github.com/stederob/Final-Project/blob/gh-pages/images/melon%20service/py-cup.png?raw=true" style="width:310px; heigth:310px;"></p>
+semicircle_b = function(x1,y1,z,tx,ty,tz1,tz2){
+  semix = x1/2
+  semib = BEZIER(S1)([[tx+semix,ty,z+tz1],[tx+semix,-y1+ty,z+tz2],[tx-semix,-y1+ty,z+tz2],[tx-semix,ty,z+tz1]])
+  return semib
+}
+
+curve1_base = BEZIER(S1)([[0.6,-1,0],[1,-0.9,0],[1,0,0],[1,0.9,0],[-1,0.9,0],[-1,0,0],[-1,-0.9,0],[-0.6,-1,0]])
+curve2_base = BEZIER(S1)([[0.6,-1.12,0],[1.1,-1,0],[1.2,0,0],[1.2,1.1,0],[-1.2,1.1,0],[-1.2,0,0],[-1.1,-1,0],[-0.6,-1.12,0]])
+[..]
+curve1a_leg = semicircle_a(0.06,0.04,0.02,0,0,0,0)
+curve1b_leg = semicircle_b(0.06,0.04,0.02,0,0,0,0)
+[..]
+curve1a_basepillow = semicircle_a(1.78,1.04,0.845,0,0,0,0)
+curve1b_basepillow = semicircle_b(1.78,1.04,0.845,0,0,0,0)
+[..]
+map1_basepillow = MAP(BEZIER(S2)([curve1a_basepillow,curve2a_basepillow,curve3a_basepillow]))(domain2)
+map2_basepillow = MAP(BEZIER(S2)([curve1b_basepillow,curve2b_basepillow,curve3b_basepillow]))(domain2)
+[..]
+basepillow = STRUCT([map1_basepillow,..,map8_basepillow])
+leg = STRUCT([map1_leg,..,map3_leg])
+support = STRUCT([map1_support,map2_support])
+base = STRUCT([map1_base,..,map4_base])
+
+</pre>
+
+<br><br>
+Then i have drew the pillow of the chair.
+</font>
+
+<p><img src="https://raw.github.com/ingmichelegalli/ingmichelegalli.github.io/master/images/p4catilina/p4catilinapillow.png" alt="p4catilina-js" style="width:100px; heigth:100px;"></p></h2>
+
+<pre>
+curve1a_pillow = semicircle_a(1.75,1,0.9,0,0,0,0)
+curve1b_pillow = semicircle_b(1.75,1,0.9,0,0,0,0)
+[..]
+map1_pillow = MAP(BEZIER(S2)([curve7a_pillow,curve5a_pillow,curve1a_pillow]))(domain2)
+map2_pillow = MAP(BEZIER(S2)([curve7b_pillow,curve5b_pillow,curve1b_pillow]))(domain2)
+[..]
+pillow = STRUCT([map1_pillow,..,map5_pillow])
+</pre>
+<br><br>
+Finally i drew the armrest. it was the most challenging part of the chair to obtain the right shape
+</font>
+
+<p><img src="https://raw.github.com/ingmichelegalli/ingmichelegalli.github.io/master/images/p4catilina/p4catilinaarmrest.png" alt="p4catilina-js" style="width:100px; heigth:100px;"></p></h2>
+
+<pre>
+curve1_armrest = BEZIER(S1)([[1,-0.8,0],[1,0,0],[1,0.8,0.2],[-1,0.8,0.2],[-1,0,0],[-1,-0.8,0]])
+curve2_armrest = BEZIER(S1)([[1.13,-0.8,0],[1.15,0,0],[1.2,0.8,0.45],[-1.2,0.8,0.45],[-1.15,0,0],[-1.13,-0.8,0]])
+[..]
+map1_armrest = MAP(BEZIER(S2)([curve1_armrest,curve2_armrest]))(domain2)
+map2_armrest = MAP(BEZIER(S2)([curve3_armrest,curve4_armrest]))(domain2)
+[..]
+armrest = COLOR(darkwood_color)(STRUCT([map1_armrest,..,map12_armrest]))
+</pre>
+<br><br>
+These are the final P4 Catilina model and the original model.
+
+<p><img src="https://raw.github.com/ingmichelegalli/ingmichelegalli.github.io/master/images/p4catilina/p4catilinamodel.png" style="width:200px; heigth:200px;"float ="right">
+ <img src="https://raw.github.com/cvdlab-cg/427966/master/final-project/images/p4catilina.jpg" style="width:175px; heigth:175px;"float ="left">
+  </p>
+  <br><br><br><br><br><br><br>
 </div>
 </font>
 
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
       </section>
     </div>
 
-    <!-- FOOTER  -->
+     <!-- FOOTER  -->
     <div id="footer_wrap" class="outer">
       <footer class="inner">
-        <p class="copyright">Final-project maintained by <a href="https://github.com/stederob">stederob</a></p>
+        <p class="copyright">Final-project maintained by <a href="https://github.com/ingmichelegalli">Michele Galli</a></p>
         <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
       </footer>
     </div>
