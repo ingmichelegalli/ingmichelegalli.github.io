@@ -54,7 +54,7 @@ The P4 CATILINA is a chair in metallic brown iron, brown gloss-lacquered seat, c
 The first thing i have made was the structure of the chair.
 I made the semicircular base, the legs and the base support for the pillow, using some ad-hoc bezier functions.
 
-<p><img src="https://raw.github.com/ingmichelegalli/ingmichelegalli.github.io/master/images/p4catilina/p4catilinastructure.png" alt="p4catilina-js" style="width:300px; heigth:30px;">
+<p><img src="https://raw.github.com/ingmichelegalli/ingmichelegalli.github.io/master/images/p4catilina/p4catilinastructure.png" alt="p4catilina-js" style="width:400px; heigth:100px;">
 </p>
 <pre>
 semicircle_a = function(x1,y1,z,tx,ty,tz1,tz2){
@@ -92,7 +92,7 @@ base = STRUCT([map1_base,..,map4_base])
 Then i have drew the pillow of the chair.
 </font>
 
-<p><img src="https://raw.github.com/ingmichelegalli/ingmichelegalli.github.io/master/images/p4catilina/p4catilinapillow.png" alt="p4catilina-js" style="width:100px; heigth:100px;"></p></h2>
+<p><img src="https://raw.github.com/ingmichelegalli/ingmichelegalli.github.io/master/images/p4catilina/p4catilinapillow.png" alt="p4catilina-js" style="width:400px; heigth:100px;"></p></h2>
 
 <pre>
 curve1a_pillow = semicircle_a(1.75,1,0.9,0,0,0,0)
@@ -107,7 +107,7 @@ pillow = STRUCT([map1_pillow,..,map5_pillow])
 Finally i drew the armrest. it was the most challenging part of the chair to obtain the right shape
 </font>
 
-<p><img src="https://raw.github.com/ingmichelegalli/ingmichelegalli.github.io/master/images/p4catilina/p4catilinaarmrest.png" alt="p4catilina-js" style="width:100px; heigth:100px;"></p></h2>
+<p><img src="https://raw.github.com/ingmichelegalli/ingmichelegalli.github.io/master/images/p4catilina/p4catilinaarmrest.png" alt="p4catilina-js" style="width:400px; heigth:100px;"></p></h2>
 
 <pre>
 curve1_armrest = BEZIER(S1)([[1,-0.8,0],[1,0,0],[1,0.8,0.2],[-1,0.8,0.2],[-1,0,0],[-1,-0.8,0]])
@@ -121,8 +121,8 @@ armrest = COLOR(darkwood_color)(STRUCT([map1_armrest,..,map12_armrest]))
 <br><br>
 These are the final P4 Catilina model and the original model.
 
-<p><img src="https://raw.github.com/ingmichelegalli/ingmichelegalli.github.io/master/images/p4catilina/p4catilinamodel.png" style="width:200px; heigth:200px;"float ="right">
- <img src="https://raw.github.com/cvdlab-cg/427966/master/final-project/images/p4catilina.jpg" style="width:175px; heigth:175px;"float ="left">
+<p><img src="https://raw.github.com/ingmichelegalli/ingmichelegalli.github.io/master/images/p4catilina/p4catilinamodel.png" style="width:400px; heigth:200px;"float ="right">
+ <img src="https://raw.github.com/cvdlab-cg/427966/master/final-project/images/p4catilina.jpg" style="width:400px; heigth:200px;"float ="left">
   </p>
   <br><br><br><br><br><br><br>
 </div>
